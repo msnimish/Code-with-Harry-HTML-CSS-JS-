@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo links</title>
+    <style>
+        .container{
+            background-color: beige;
+            border-radius: 4px;
+            border: 2px solid red;
+            padding: 35px;
+            width: 600px;
+            margin:auto;
+        }
+
+        .btn{
+            background-color: cornflowerblue;
+            padding: 4px 15px ;
+            border: none;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-weight: bold;
+            cursor: pointer;
+            /* border-radius: 20px; */
+            /* height: 20px; */
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: blueviolet;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .btn:active {
+            background-color:black;
+        }
+
+        /* .btn:visited{
+            color:red;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi exercitationem quisquam rerum consequuntur voluptatum expedita autem illum cumque eligendi modi, at recusandae mollitia voluptatibus aliquam nesciunt culpa ducimus optio, vitae temporibus. Culpa, nulla.</p>
+        <a href="https://google.com" class="btn" target="_blank" >Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
