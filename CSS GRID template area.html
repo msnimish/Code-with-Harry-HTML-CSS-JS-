@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid template areas</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'section section aside' 
+            'footer footer footer'; 
+        }
+
+        .item{
+            background-color: rgb(197, 137, 254);
+            border: 2px solid red;
+            padding: 35px;
+            font-size: 2rem;
+        }
+
+        #navbar{
+            grid-area:navbar;
+        }
+        #section{
+            grid-area:section;
+        }
+        #aside{
+            grid-area:aside;
+        }
+        footer{
+            grid-area:footer;
+        }
+
+        ul{
+            display: flex;
+        }
+        
+        ul li{
+            padding: 20px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi, laboriosam perferendis expedita magni maxime veritatis officia eligendi, ex quas impedit quae maiores esse id alias reprehenderit autem nemo, distinctio nostrum. Earum error hic natus, nemo nisi voluptas in quia alias inventore consequuntur, eveniet atque esse soluta. Alias, placeat eius!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque quae eius? Corrupti similique a architecto voluptatem qui enim totam, commodi, minus earum accusamus modi sunt nam quod quia, dolore beatae eaque asperiores excepturi at explicabo ullam omnis. Ex dignissimos facilis quos culpa nam laudantium beatae cupiditate possimus magni sint repellendus ipsum vero adipisci, consequatur inventore officia minima voluptas eveniet maxime asperiores ratione dolores? Architecto illo ullam dolorum natus explicabo pariatur nostrum fugiat, sequi ab nulla perferendis illum perspiciatis velit modi libero doloribus odit reiciendis, neque asperiores? Fugit exercitationem dolore a nobis, hic repellendus optio sequi molestiae numquam? Officia, veritatis!</div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque ad asperiores.</footer>
+    </div>
+</body>
+</html>
