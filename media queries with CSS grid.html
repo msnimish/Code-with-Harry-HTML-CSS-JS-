@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+
+        section{
+            grid-area: section;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+        span{
+            font-size: 1rem;
+            padding: 5px 23px;
+            font-weight: bold;
+        }
+
+        .bdr{
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body{
+                background-color: red;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width: 500px) {
+            body{
+                background-color: blue;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width: 800px) {
+            body{
+                background-color: yellow;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit id, numquam sint, adipisci vero, doloremque vel accusamus animi sit inventore molestias. Dicta illo vel saepe velit reprehenderit modi perferendis quia repellat, provident odio adipisci rem repellendus autem suscipit omnis corporis minus numquam commodi tempora deleniti. Perferendis accusamus, facilis quam voluptates velit, nam odit fugit rem ipsa laboriosam sit debitis deleniti non natus nobis praesentium animi mollitia hic. Velit nulla eligendi numquam dolorem ad? Quam amet, quas, veritatis autem officia suscipit dolorum, eius voluptate nulla fugiat dignissimos veniam neque error et cum laborum est odio architecto repudiandae tempore? Accusantium aperiam deleniti officiis aut architecto illum voluptatibus quod sequi unde aliquid fuga neque possimus animi obcaecati esse a nobis error, itaque quidem optio mollitia, iure consequuntur? Dolorem quidem repellat rerum ea soluta facilis? Enim necessitatibus consequuntur animi illo minus fugit aperiam incidunt blanditiis inventore deleniti esse labore numquam provident placeat, quam voluptates.</p>
+        </section>
+        <aside class="bdr">
+            <h2>More about us</h2>
+        </aside>
+        <footer class="bdr">Copyright CodeWithHarry 2022</footer>
+    </div>
+</body>
+</html>
