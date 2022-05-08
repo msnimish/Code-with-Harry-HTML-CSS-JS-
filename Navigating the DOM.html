@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another container
+    </div>
+    <script>
+        let main = document.getElementById("main");
+        console.log(main);
+
+        let containers = document.getElementsByClassName("container")
+        console.log(containers, containers[1]);
+
+        let sel = document.querySelector("#nav");
+        console.log(sel);
+
+        let select = document.querySelectorAll("#nav>li");
+        console.log(select);
+    </script>
+</body>
+</html>
