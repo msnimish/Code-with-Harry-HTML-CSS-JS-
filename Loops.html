@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+    // Traditional for loop
+    // for(i=0; i<3; i++){
+    //     console.log(`${i} is less than 3`);
+    // }
+
+    let friends = ["Rohan", "Smita", "Rahul", "Sameer", "Radha"];
+    
+    // forEach loop for arrays
+    // friends.forEach(element => {
+        //     console.log(element + " is my good friend");
+        // });
+        
+    // for...of loop for arrays
+    // for (element of friends){
+    //     console.log(element + ' is one of my good friends');
+    // }
+
+    let employee = {
+        name: "Nimish",
+        salary: "8 lakhs",
+        designation: "Web Developer"
+    }
+    // for...in loop for objects
+    // for (const key in employee) {
+    //     console.log( `The ${key} of employee is ${employee[key]}`);
+    // }
+
+    // while loop in js
+    let i =0;
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+    
+    // do while loop in js
+    let j =34;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+
+
+    </script>
+</body>
+</html>
