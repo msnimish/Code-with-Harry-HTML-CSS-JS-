@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut and setInterval</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log('This is a tutorial on setTimeout and setInterval');
+        function greet(name, byeText, inspire){
+            console.log('Hello Good Morning ' + name + ' ' + byeText + " " + inspire);
+        }
+
+        setTimeout(greet,5000,'Harry', 'Take Care', 'Come On');
+
+        // Cancels or clears setTimeout function
+        // timeOutId = setTimeout(greet,5000,'Harry', 'Take Care', 'Come On');
+        // clearTimeout(timeOutId);
+
+        // This syntax is wrong as it is calling the function in setTimeout which is not allowed
+        // setTimeout(greet(), 12000, 'Harry');
+
+        intervalId = setInterval(greet, 1000, "Harry", "Go Back");
+
+         // Cancels or clears setInterval function
+        // intervalId = setInterval(greet, 1000, "Harry", "Go Back");
+        // clearInterval(intervalId);
+
+        function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,  1000);
+    </script>
+</body>
+</html>
